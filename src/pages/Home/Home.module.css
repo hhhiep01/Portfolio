@@ -1,0 +1,22 @@
+.homeContainer{
+    padding: 0 40px;
+}
+
+.avatarImage {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    text-align: center;
+}
+.homeContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  

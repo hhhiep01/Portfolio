@@ -1,54 +1,30 @@
-/* src/components/About.module.css */
-#about {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.6;
-  text-align: left;
-}
-
-#about h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#about p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
-  text-align: justify;
-}
-
-.avatarImage {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  margin-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.aboutSection{
+  padding: 0 40px;
 }
 
 .aboutContent {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
+
 .aboutContentLeft {
-  flex: 2;
+  flex: 1; /* Chiếm 50% chiều rộng */
 }
 
 .aboutContentRight {
-  flex: 1;
+  flex: 1; /* Chiếm 50% chiều rộng */
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột */
+  grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột cho phần công nghệ */
   gap: 20px; /* Khoảng cách giữa các cột */
 }
 
 .item {
+  text-align: center;
+}
+.title{
   text-align: center;
 }
 
@@ -59,29 +35,17 @@
 }
 
 @media (max-width: 768px) {
-  #about {
-    padding: 30px 15px;
-  }
-
-  #about h2 {
-    font-size: 1.5rem;
-  }
-
-  #about p {
-    font-size: 0.95rem;
+  .aboutContent {
+    flex-direction: column; /* Chuyển hướng thành cột trên màn hình nhỏ */
   }
 
   .aboutContentRight {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Chuyển thành 2 cột trên màn hình nhỏ */
+    grid-template-columns: repeat(2, 1fr); /* Chuyển thành 2 cột trên màn hình nhỏ */
   }
 
-  /* Đặt thành 1 cột khi màn hình quá nhỏ */
   @media (max-width: 480px) {
     .aboutContentRight {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /* Chuyển thành 1 cột trên màn hình rất nhỏ */
     }
   }
 }

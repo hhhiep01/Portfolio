@@ -1,0 +1,70 @@
+/* src/components/Footer/Footer.module.css */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .socialLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .socialLinks a:hover {
+    text-decoration: underline;
+  }
+  
+  .contactInfo {
+    font-size: 14px;
+  }
+  
+  .footerBottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  .socialLinks{
+    display: flex;
+    flex-direction: row;
+  }
+  
+.socialLinksItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .socialLinksItem img {
+    width: 30px;
+    height: auto; 
+    margin-right: 10px; 
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .socialLinks a {
+      margin: 5px 0;
+    }
+  }
+  

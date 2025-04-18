@@ -1,23 +1,24 @@
 
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
-import Home from './pages/Home'
+
 import About from './pages/About/About'
-import Project from './pages/Project'
-import Contact from './pages/Contact'
+import Home from './pages/Home/Home'
+import Footer from './components/Footer/Footer'
+import Contact from './pages/Contact/Contact'
+import Project from './pages/Project/Project'
 
 function App() {
   
 
   return (
-    <>
-      <div>
+    <>     
       <Navbar />
       <Home />
       <About />
       <Project />
       <Contact />
-    </div>
+      <Footer />   
     </>
   )
 }
